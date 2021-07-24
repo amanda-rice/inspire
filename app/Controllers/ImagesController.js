@@ -3,7 +3,14 @@ import { imagesService } from "../Services/ImagesService.js";
 
 function _draw() {
   let bg = document.getElementById('bg-image')
-  bg.style.backgroundImage = `url(${ProxyState.image['imgUrl']})`
+  bg.style.backgroundImage = `url(${ProxyState.image['largeImgUrl']})`
+  bg.style.backgroundSize = "cover"
+  let template = `
+  <p class="p-0 m-0">${ProxyState.image['query']}</p>
+  <p class="p-0 m-0">${ProxyState.image['author']}</p>
+  `
+
+  document.getElementById('img-info').innerHTML = template
 }
 
 

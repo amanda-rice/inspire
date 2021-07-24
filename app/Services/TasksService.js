@@ -8,9 +8,7 @@ class TasksService {
     let currentBox = ProxyState.task.find(t => t.id == id)
     currentBox.completed = !currentBox.completed
     const res = await sandbox.put('amanda/todos/' + id, currentBox)
-
-    console.log("Did the checked update?")
-    console.log(ProxyState.task)
+    ProxyState.task = ProxyState.task
   }
   async getAllTasks() {
     let res = await sandbox.get('amanda/todos')

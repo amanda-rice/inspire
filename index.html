@@ -16,24 +16,53 @@
 </head>
 
 <body id="bg-image">
-    <header>
-        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">inspire</span>
-            </a>
-        </nav>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-3" id="temp">
+            </div>
+        </div>
     </header>
-    <main class="container">
-        <div class="div" id="clock"></div>
-        <div class="div" id="temp"></div>
-        <div class="div" id="quote"></div>
-        <div class="div" id="list"></div>
+    <main class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-6 h-100 align-items-center text-center">
+                <div class="row h-100 align-items-center">
+                    <div class="col h-10 align-middle text-light main-shadow">
+                        <div class="clock-text" id="clock"></div>
+                        <h1 id="clock-greeting">Good Morning</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
-    <footer class="bg-dark text-light">
-        <div class="text-center">
-            <p><small>Made with love by Codeworks</small></p>
+    <footer class="text-light container-fluid">
+        <div class="row">
+            <div class="col-3 d-flex flex-column justify-content-end" id="img-info"></div>
+            <div class="col-6 text-center" id="quote"></div>
+            <div class="col-3 d-flex flex-column text-dark" id="list">
+                <div class="mt-3">
+                    <div class="bg-light rounded shadow-light list-cards m-3 d-flex flex-column">
+                        <div
+                            class="d-flex justify-content-around align-items-center rounded-top text-dark flex-column card-text-shadow text-center p-3">
+                            <div>
+                                <h5 class="">To Do</h5>
+                            </div>
+                            <div class="d-flex">
+                                <p id="task-counts">0/0</p>
+                            </div>
+                        </div>
+                        <div class="p-2 flex-grow-1">
+                            <div id="tasks-list">
+                            </div>
+                        </div>
+                        <form onsubmit="app.tasksController.addTask()" class="p-2 d-flex outline-dark">
+                            <input type="text" name="task" class="form-control" placeholder="Add a task..." required
+                                minlength="3" maxlength="50">
+                            <button type="submit" class="btn ml-2 btn-outline-dark">+</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
