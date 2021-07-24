@@ -10712,4 +10712,8 @@ footer {
   text-shadow: 2px 2px #1312125b;
 }
 
+.completed-task {
+  text-decoration: line-through;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,7 @@ class AppState extends EventEmitter {
   clock = []
   task = []
   quote = []
-  temp = []
+  temp = {}
   image = []
 }
 
