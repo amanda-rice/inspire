@@ -1,3 +1,4 @@
+import Task from "./Models/TaskModel.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
