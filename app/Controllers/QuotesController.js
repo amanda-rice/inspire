@@ -4,8 +4,12 @@ import { quotesService } from "../Services/QuotesService.js"
 
 function _draw() {
   let template = `
-  <div>"${ProxyState.quote[0]}"</div>
-  <div>${ProxyState.quote[1]}</div>
+  <div class="this-quote">
+    <div>"${ProxyState.quote[0]}"</div>
+    <div class="author">
+      <div>${ProxyState.quote[1]}</div>
+    </div>
+  </div>
   `
   document.getElementById('quote').innerHTML = template
 }

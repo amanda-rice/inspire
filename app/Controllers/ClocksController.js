@@ -16,7 +16,7 @@ function getClock() {
   let time = new Date()
   let hour = time.getHours()
   let greeting = "Good Morning"
-  if (hour > 12 && hour < 16) {
+  if (hour >= 12 && hour < 16) {
     greeting = "Good Afternoon"
   }
   else if (hour >= 16) {
