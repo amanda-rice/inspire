@@ -4,7 +4,7 @@ import { quotesService } from "../Services/QuotesService.js"
 
 function _draw() {
   let template = `
-  <div class="this-quote">
+  <div class="this-quote main-shadow">
     <div>"${ProxyState.quote[0]}"</div>
     <div class="author">
       <div>${ProxyState.quote[1]}</div>

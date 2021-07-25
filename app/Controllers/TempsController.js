@@ -13,7 +13,7 @@ function _draw() {
   }
   let template = `
   <p class="m-0 p-0">${ProxyState.temp.weather}</p>
-  <div>
+  <div class="main-shadow">
     <p class="m-0 p-0" onclick="app.tempsController.switchMeasurement()">${currentTemp}</p>
     <p class="m-0 p-0">${ProxyState.temp.city}</p>
   </div>
