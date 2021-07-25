@@ -8,8 +8,13 @@ function _draw() {
   bg.style.backgroundImage = `url(${ProxyState.image['largeImgUrl']})`
   bg.style.backgroundSize = "cover"
   let template = `
-  <p class="p-0 m-0 main-shadow"><i>${name}</i></p>
-  <p class="p-0 m-0 main-shadow">Photographer: ${ProxyState.image['author']}</p>
+  <div class="this-img">
+    <p class="p-0 m-0 main-shadow"><i>${name}</i></p>
+    <p class="p-0 m-0 main-shadow">Photographer: ${ProxyState.image['author']}</p>  
+    <div class="change-img">
+      <p class="p-0 m-0 main-shadow" onclick="app.imagesController.getImage()"><i>Change Image<i></p>
+    </div>
+  </div>
   `
 
   document.getElementById('img-info').innerHTML = template

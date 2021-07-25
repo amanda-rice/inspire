@@ -8,6 +8,7 @@ function _draw() {
     <div>"${ProxyState.quote[0]}"</div>
     <div class="author">
       <div>${ProxyState.quote[1]}</div>
+      <p class="p-0 m-0 main-shadow" onclick="app.quotesController.getQuote()"><i>Get new quote<i></p>
     </div>
   </div>
   `

@@ -10724,4 +10724,12 @@ footer {
   transition: all 0.7s linear;
 }
 
+.this-img:hover .change-img {
+  opacity: 1;
+}
+.this-img .change-img {
+  opacity: 0;
+  transition: all 0.7s linear;
+}
+
 /*# sourceMappingURL=main.css.map */
