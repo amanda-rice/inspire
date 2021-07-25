@@ -7,6 +7,7 @@ function _draw() {
   let bg = document.getElementById('bg-image')
   bg.style.backgroundImage = `url(${ProxyState.image['largeImgUrl']})`
   bg.style.backgroundSize = "cover"
+  bg.style.backgroundAttachment = "fixed"
   let template = `
   <div class="this-img">
     <p class="p-0 m-0 main-shadow"><i>${name}</i></p>
