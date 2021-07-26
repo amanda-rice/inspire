@@ -5,9 +5,7 @@ import { sandbox } from "./AxiosService.js"
 class TempsService {
   async getTemp() {
     const res = await sandbox.get('weather')
-    console.log(res.data)
     ProxyState.temp = new Temp(res.data)
-    console.log(ProxyState.temp)
   }
 }
 

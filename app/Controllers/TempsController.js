@@ -3,7 +3,6 @@ import Temp from "../Models/TempModel.js"
 import { tempsService } from "../Services/TempsService.js"
 
 function _draw() {
-  console.log('drawing')
   let currentTemp = ''
   if (ProxyState.temp.isCelsius) {
     currentTemp = ProxyState.temp.celsius + '°C'
@@ -36,6 +35,5 @@ export default class TempsController {
   switchMeasurement() {
     ProxyState.temp.isCelsius = !ProxyState.temp.isCelsius
     ProxyState.temp = ProxyState.temp
-    console.log(ProxyState.temp.isCelsius)
   }
 }
