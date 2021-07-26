@@ -29,6 +29,10 @@ footer{
 .completed-task{
   text-decoration: line-through
 }
+.task-master{
+  max-height: 65vh;
+  overflow-y: auto;
+}
 
 .this-quote {
   &:hover{

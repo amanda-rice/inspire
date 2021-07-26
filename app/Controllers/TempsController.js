@@ -37,3 +37,4 @@ export default class TempsController {
     ProxyState.temp = ProxyState.temp
   }
 }
+
